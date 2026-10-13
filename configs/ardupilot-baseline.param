@@ -1,0 +1,11 @@
+# Baseline placeholders only.
+# Do not blindly load these values into a moving vehicle.
+# Verify current ArduPilot parameter names in Mission Planner for the installed firmware.
+#
+# Intended architecture:
+# SERVO1_FUNCTION = GroundSteering
+# SERVO3_FUNCTION = Throttle
+# RC failsafe action = HOLD initially
+# battery failsafe action = HOLD initially
+# geofence enabled before AUTO
+# first AUTO cruise speed ~= 1 m/s
