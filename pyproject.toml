@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "remote-car"
+version = "0.1.0"
+description = "Pixhawk/ArduPilot RC rover tooling"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "pymavlink>=2.4.41",
+  "PyYAML>=6.0.2",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+  "ruff>=0.6",
+]
+
+[project.scripts]
+remote-car = "remote_car.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["remote_car*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
