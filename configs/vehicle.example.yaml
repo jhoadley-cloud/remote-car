@@ -1,0 +1,12 @@
+name: remote-car-v1
+battery_cells: 2
+low_voltage_per_cell: 3.55
+critical_voltage_per_cell: 3.35
+max_test_speed_mps: 1.0
+
+steering_output: 1
+throttle_output: 3
+
+require_gps_fix: true
+min_satellites: 8
+max_hdop: 2.0
