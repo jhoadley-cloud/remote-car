@@ -240,45 +240,36 @@ Before final purchasing decisions, answer:
 
 ---
 
-## 15. Owned inventory from storage audit
+---
 
-These items were physically identified during the October 18, 2026 storage audit. Items marked TBD need a model/spec lookup before design decisions depend on them.
+## 15. Owned inventory relevant to remote-car
+
+These are owned parts that are directly useful to the rover or are shared workshop/electronics resources. Drone-specific propulsion hardware is tracked in `remote-drone`.
 
 ### Controllers, computers, cameras, and sensors
 
 | Item | Brand | Model / specification | Qty | Status | Notes |
 |---|---|---|---:|---|---|
-| Pixhawk flight controller bundle | TBD | Pixhawk 2.4.8 bundle | 1 | Owned | Bundle includes drone-oriented sensors/accessories; exact GPS, compass, power module, buzzer, safety switch, telemetry, and cable contents TBD |
+| Pixhawk flight controller bundle | TBD | Pixhawk 2.4.8 bundle | 1 | Owned | Exact GPS, compass, power module, buzzer, safety switch, telemetry, and cables TBD |
 | ESP32-CAM modules | Inland | ESP32-CAM Wi-Fi/Bluetooth camera modules | 2 | Owned | Optional camera/vision hardware |
 | ESP32 Feather-format board | TBD | PAZO32 V2 Feather ESP32, 8 MB flash, 2 MB PSRAM, Wi-Fi/Bluetooth | 1 | Owned | Exact manufacturer/model spelling TBD |
 | CMUcam5 Pixy | Charmed Labs / CMU-RI | Pixy Rev 2.3 (2021) | 1 | Owned | Includes stand and cables; optional vision sensor |
 | M5Stack Timer Camera X | M5Stack | OV3660, Wi-Fi, BLE, UART, 8 MB PSRAM, 140 mAh battery, 66.5° FOV | 1 | Owned | Optional wireless vision module |
 | Thermal IR module | TBD | AMG8831 or AMG8833 | 1 | Owned | Exact part number TBD |
 | Raspberry Pi | Raspberry Pi | Raspberry Pi 4 Model B, 2 GB RAM | 1 | Owned | Optional companion computer |
-| Bluetooth UART module | DSD TECH | 6-pin EN/VCC/GND/TXD/RXD/STATE module | 1 | Owned | Likely HC-05/HM-series style; exact model TBD |
-| Embedded armor heatsink | TBD | 7 mm embedded armor heatsink | 1 | Owned | Likely for a Raspberry Pi or similar SBC; exact compatibility TBD |
+| Bluetooth UART module | DSD TECH | 6-pin EN/VCC/GND/TXD/RXD/STATE module | 1 | Owned | Exact model TBD |
+| Motor driver shield | TBD | L298P four-channel motor drive shield | 1 | Owned | For small auxiliary/bench motors, not rover traction motor |
+| Micro servos | TBD | Basic micro servos | TBD | Owned | Auxiliary actuators only; not assumed suitable for steering |
 
-### Motor control and actuators
-
-| Item | Brand | Model / specification | Qty | Status | Notes |
-|---|---|---|---:|---|---|
-| ESC | TOYTENSI (spelling to confirm) | 60 A, 2S-6S LiPo ESC | 1 | Owned | Exact model, brushed/brushless type, BEC, reverse capability, and protocol TBD |
-| ESC driver/distribution boards | Aero Selfie | 4-channel ESC driver/distribution board | 2 | Owned | Each board can interface with up to four separate ESCs; exact model/signaling TBD |
-| Motor driver shield | TBD | L298P four-channel motor drive shield | 1 | Owned | Exact board layout, voltage, and usable current TBD |
-| Micro servos | TBD | Basic micro servos | TBD | Owned | Treat as low-capability auxiliary actuators; do not assume suitable for rover steering |
-
-### Batteries, power, connectors, and passive electronics
+### Wiring, passive electronics, and prototyping
 
 | Item | Brand | Model / specification | Qty | Status | Notes |
 |---|---|---|---:|---|---|
-| LiPo battery | Spektrum | 3200 mAh, 22.2 V, 6S LiPo | 1 | Owned | IC5 main connector plus 7-pin balance lead; not assumed suitable for rover V1 |
-| Power cables/connectors | Assorted | XT60 | Assorted | Owned | Exact quantities/genders/wire gauges TBD |
-| Power cables/connectors | Assorted | IC5 | Assorted | Owned | Exact quantities/genders/wire gauges TBD |
-| Power cables/connectors | Assorted | EC5 | Assorted | Owned | Exact quantities/genders/wire gauges TBD |
-| Signal cables | TBD | Pre-crimped Dupont 2.54 mm to JST-SH 1.0 mm | Assorted | Owned | Pin count and wiring order TBD; verify pinout before use |
+| Power cables/connectors | Assorted | XT60 / IC5 / EC5 | Assorted | Owned | Exact quantities/genders/wire gauges TBD |
+| Signal cables | TBD | Pre-crimped Dupont 2.54 mm to JST-SH 1.0 mm | Assorted | Owned | Verify pinout before use |
 | Jumper wires/cables | Assorted | Assorted | Assorted | Owned | |
 | PCB prototyping boards | Assorted | Prototyping/perf boards | Assorted | Owned | |
-| Capacitors | TBD | 1000 µF | 20 | Owned | Voltage rating and type/brand TBD |
+| Capacitors | TBD | 1000 µF | 20 | Owned | Voltage rating TBD |
 | Resistors | Assorted | Assorted values | Assorted | Owned | |
 | Breadboard | TBD | Standard prototyping breadboard | 1+ | Owned | |
 
@@ -287,10 +278,10 @@ These items were physically identified during the October 18, 2026 storage audit
 | Item | Brand | Model / specification | Qty | Status | Notes |
 |---|---|---|---:|---|---|
 | 3D printer | Existing | Existing printer | 1 | Owned | Large filament supply also owned |
-| 3D-printing filament | Assorted | Assorted materials/colors | Assorted | Owned | Exact filament types/quantities TBD |
-| Portable fog machine | COLBOR | Portable fog machine, exact model TBD | 1 | Owned | For airflow visualization / mini wind-tunnel experiments; relevant to car and future drone work |
-| Heat gun | TBD | TBD | 1 | Owned | For heat-shrink and fabrication |
-| Heat-shrink tubing | Assorted | Assorted sizes | Assorted | Owned | For electrical insulation of soldered joints |
+| 3D-printing filament | Assorted | Assorted materials/colors | Assorted | Owned | Exact materials/quantities TBD |
+| Portable fog machine | COLBOR | Portable fog machine, exact model TBD | 1 | Owned | Airflow visualization / mini wind-tunnel experiments |
+| Heat gun | TBD | TBD | 1 | Owned | |
+| Heat-shrink tubing | Assorted | Assorted sizes | Assorted | Owned | |
 | Digital multimeter | TBD | TBD | 1 | Owned | |
 | Soldering setup | Assorted | Soldering iron + stand/helping hands + magnifier | 1 set | Owned | Includes solder, rosin paste/flux, and tip tinner |
 | Calipers | TBD | TBD | 1 | Owned | |
@@ -300,19 +291,13 @@ These items were physically identified during the October 18, 2026 storage audit
 | Super glue | TBD | Cyanoacrylate adhesive | 1+ | Owned | |
 | Safety glasses | TBD | TBD | 1+ | Owned | |
 
-### Purchase-history / label lookup checklist
+### Car-side lookup checklist
 
-The following details are worth looking up before they are used in the design:
-
-- **Pixhawk 2.4.8 bundle:** exact bundle listing; GPS/compass; power module and current rating; telemetry; receiver; buzzer; safety switch; included cables.
-- **Aero Selfie boards:** exact product/model name; what the board is officially called; channel count; signal type; operating voltage; compatible ESC type.
-- **60 A 2S-6S ESC:** exact TOYTENSI brand/model spelling; brushed vs brushless; forward/reverse; BEC voltage/current; supported control protocol.
-- **DSD TECH Bluetooth UART module:** exact model and Bluetooth version; supply and logic voltage.
-- **PAZO32 V2 Feather ESP32:** exact manufacturer and product spelling; confirm 8 MB flash and 2 MB PSRAM.
-- **L298P motor driver shield:** exact board/model; channel count; motor voltage; continuous/peak current.
-- **AMG883x thermal sensor:** determine whether AMG8831 or AMG8833 and identify breakout-board manufacturer.
-- **7 mm embedded armor heatsink:** exact product name and intended SBC/Raspberry Pi model.
-- **Micro servos:** model, quantity, operating voltage, and torque.
-- **1000 µF capacitors:** voltage rating and capacitor type.
-- **Dupont 2.54 mm to JST-SH 1.0 mm cables:** conductor count, quantity, and exact pinout.
-- **XT60 / IC5 / EC5 assortment:** quantities, male/female combinations, and wire gauges.
+- Pixhawk 2.4.8 bundle accessory models and ratings
+- PAZO32 V2 exact manufacturer/product spelling
+- DSD TECH Bluetooth UART exact model
+- AMG8831 vs AMG8833
+- micro servo model/quantity/specs
+- 1000 µF capacitor voltage ratings
+- Dupont-to-JST-SH conductor count and pinout
+- XT60 / IC5 / EC5 quantities, genders, and wire gauges
