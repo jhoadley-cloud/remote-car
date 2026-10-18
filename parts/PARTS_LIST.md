@@ -201,6 +201,7 @@ Suggested status values:
 | Calipers | Measure mounting and enclosure geometry | TBD | TBD | TBD | TBD | TBD | Researching | |
 | Infrared thermometer | Motor/ESC temperature checks | TBD | TBD | TBD | TBD | TBD | Researching | Optional |
 | Current meter / watt meter | Verify drivetrain current | TBD | TBD | TBD | TBD | TBD | Researching | Strongly useful before fuse selection |
+| Portable fog machine | Airflow/smoke visualization for mini wind-tunnel experiments | COLBOR | Portable fog machine (exact model TBD) | 1 | $0 | TBD | Owned | Supporting test equipment; not required for rover V1 |
 
 ---
 
